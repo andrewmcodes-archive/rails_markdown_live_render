@@ -679,6 +679,25 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@github/markdown-toolbar-element@^1.0.7":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@github/markdown-toolbar-element/-/markdown-toolbar-element-1.0.7.tgz#61d7b4aabf19b0218d7504a31f2cc768508255a4"
+  integrity sha512-E5islrnwtQuWWgPgXcmdU7GjrpsMb1PqvPvSuKfJSxduCCU7VbeP8uEcuBF++mzUWCwAv7VgNVoXudTS5prRyg==
+
+"@primer/css@^13.0.1":
+  version "13.0.1"
+  resolved "https://registry.yarnpkg.com/@primer/css/-/css-13.0.1.tgz#8755732664ff12be02b5592d7793088f79c34031"
+  integrity sha512-lYVOX3UFC0uwFpw/v6xYyT8dLhqzYhWE8bHsRyOg+0CbdGGWJlbASan2Ec2kQ22p3bIbt1KcnL+8gJOxEMWO/w==
+  dependencies:
+    "@primer/octicons" "^9.1.1"
+
+"@primer/octicons@^9.1.1":
+  version "9.1.1"
+  resolved "https://registry.yarnpkg.com/@primer/octicons/-/octicons-9.1.1.tgz#a72a59e8ec77521cc2eefb36c345f780a61c79fb"
+  integrity sha512-7EGM0+Kx39bIgaYr9bTCzFvBCxm+fqh/YJIoSns8zfCwss32ZJ2GDP3024UH709VQtM5cKFU4JcIYPHyGdSfIg==
+  dependencies:
+    object-assign "^4.1.1"
+
 "@rails/actioncable@^6.0.0-alpha":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@rails/actioncable/-/actioncable-6.0.0.tgz#8bff9c902be1531ef7a9e191562e9771efcfdfe1"

@@ -1,6 +1,6 @@
 class DocumentsController < ApplicationController
   before_action :set_document, only: [:show, :edit, :update, :destroy]
-  # before_action :set_markdown, only: :show
+  before_action :set_markdown, only: :show
   # GET /documents
   # GET /documents.json
   def index
@@ -58,9 +58,10 @@ class DocumentsController < ApplicationController
       @document = Document.find(params[:id])
     end
 
-    # def set_markdown
-    #   @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
-    # end
+    def set_markdown
+      markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
+      @markdown_content = markdown.render(@document.content).html_safe
+    end
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def document_params
