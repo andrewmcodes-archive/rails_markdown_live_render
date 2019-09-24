@@ -1,6 +1,9 @@
 {
   "name": "rails_markdown_live_render",
   "private": true,
+  "scripts": {
+    "prettier-fix": "yarn run prettier --write --config ./prettier.config.js '**/*.{js,jsx,json,css,yaml,yml,md}'"
+  },
   "dependencies": {
     "@github/markdown-toolbar-element": "^1.0.7",
     "@primer/css": "^13.0.1",
@@ -13,6 +16,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "prettier": "^1.18.2",
     "webpack-dev-server": "^3.8.1"
   }
 }

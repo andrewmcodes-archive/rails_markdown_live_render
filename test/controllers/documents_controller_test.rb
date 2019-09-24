@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class DocumentsControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -16,8 +16,8 @@ class DocumentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create document" do
-    assert_difference('Document.count') do
-      post documents_url, params: { document: { content: @document.content, name: @document.name } }
+    assert_difference("Document.count") do
+      post documents_url, params: {document: {content: @document.content, name: @document.name}}
     end
 
     assert_redirected_to document_url(Document.last)
@@ -34,12 +34,12 @@ class DocumentsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update document" do
-    patch document_url(@document), params: { document: { content: @document.content, name: @document.name } }
+    patch document_url(@document), params: {document: {content: @document.content, name: @document.name}}
     assert_redirected_to document_url(@document)
   end
 
   test "should destroy document" do
-    assert_difference('Document.count', -1) do
+    assert_difference("Document.count", -1) do
       delete document_url(@document)
     end
 
