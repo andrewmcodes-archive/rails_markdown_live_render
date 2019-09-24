@@ -7,7 +7,7 @@
 
 <p>
   <strong>Content:</strong>
-  <%= @document.content %>
+  <%= @markdown.render(@document.content) %>
 </p>
 
 <%= link_to 'Edit', edit_document_path(@document) %> |
