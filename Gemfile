@@ -15,6 +15,7 @@ gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
 gem "twitter-bootstrap-rails"
 gem "haml-rails"
+gem "stimulus_reflex"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
