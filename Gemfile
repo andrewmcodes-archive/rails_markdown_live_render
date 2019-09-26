@@ -13,6 +13,8 @@ gem "redcarpet"
 gem "sass-rails", "~> 5"
 gem "turbolinks", "~> 5"
 gem "webpacker", "~> 4.0"
+gem "twitter-bootstrap-rails"
+gem "haml-rails"
 
 group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]

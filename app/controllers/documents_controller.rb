@@ -61,7 +61,7 @@ class DocumentsController < ApplicationController
 
   def set_markdown
     markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML, autolink: true, tables: true)
-    @markdown_content = markdown.render(@document.content).html_safe
+    @markdown_content = markdown.render(@document.content || "").html_safe
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
