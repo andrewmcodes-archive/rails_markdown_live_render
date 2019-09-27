@@ -10,4 +10,5 @@
 #
 
 class Document < ApplicationRecord
+  validates :session_id, presence: true
 end

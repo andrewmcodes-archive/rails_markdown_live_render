@@ -4,7 +4,7 @@ class DocumentsController < ApplicationController
   # GET /documents
   # GET /documents.json
   def index
-    @documents = Document.all
+    @documents = Document.where(session_id: session.id)
   end
 
   # GET /documents/1
@@ -66,6 +66,6 @@ class DocumentsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def document_params
-    params.require(:document).permit(:name, :content)
+    params.require(:document).permit(:name, :content, :session_id)
   end
 end

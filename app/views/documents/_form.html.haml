@@ -1,13 +1,14 @@
-= form_for @document, html: { class: "form form-horizontal document" } do |f|
+= form_for @document, html: { class: "form form-horizontal document" }, data: { controller: "documents" } do |f|
   .form-group
     = f.label :name, class: 'control-label col-lg-2'
     .col-lg-10
       = f.text_field :name, class: 'form-control', required: true
+      = f.hidden_field :session_id, value: session.id
     = f.error_span(:name)
   .form-group
     = f.label :content, class: 'control-label col-lg-2'
     .col-lg-10
-      = f.text_area :content, class: 'form-control', required: true, rows: 20
+      = f.text_area :content, class: 'form-control', required: true, rows: 20, data: { "data-reflex": "change->DocumentsReflex#update", "data-id": @document.id, "data-room": session.id }
     = f.error_span(:content)
   .form-group
     .col-lg-offset-2.col-lg-10
