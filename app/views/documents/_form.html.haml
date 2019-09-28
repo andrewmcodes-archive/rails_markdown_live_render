@@ -1,4 +1,4 @@
-= form_for @document, html: { class: "form form-horizontal document" }, data: { controller: "documents" } do |f|
+= form_for @document, html: { class: "form form-horizontal document" } do |f|
   .form-group
     = f.label :name, class: 'control-label col-lg-2'
     .col-lg-10
@@ -8,7 +8,8 @@
   .form-group
     = f.label :content, class: 'control-label col-lg-2'
     .col-lg-10
-      = f.text_area :content, class: 'form-control', required: true, rows: 20, data: { "data-reflex": "change->DocumentsReflex#update", "data-id": @document.id, "data-room": session.id }
+      -# For some reason - I was having some issues putting the keyup directly as the reflex here.
+      = f.text_area :content, class: 'form-control', required: true, rows: 20, data: { controller: "documents", reflex: "change->DocumentsReflex#update", id: @document.id, room: session.id, action: "keyup->documents#edit" }
     = f.error_span(:content)
   .form-group
     .col-lg-offset-2.col-lg-10

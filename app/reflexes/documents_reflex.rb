@@ -1,13 +1,20 @@
-class DocumentsReflex < StimulusReflex::Reflex
-  def edit
-    @edit_id = element.dataset[:id].to_i
-  end
+# frozen_string_literal: true
 
-  def cancel_edit
-    @edit_id = nil
+class DocumentsReflex < StimulusReflex::Reflex
+  def edit(value)
+    find_document&.update(content: value)
   end
 
   def update
-    Document.find_by(session_id: session.id, id: element.dataset[:id])&.update content: element[:value]
+    find_document&.update(content: element[:value])
+  end
+
+  private
+
+  def find_document
+    Document.find_by(
+      session_id: session.id,
+      id: element.dataset[:id]
+    )
   end
 end
