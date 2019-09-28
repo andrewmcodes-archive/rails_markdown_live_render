@@ -1463,7 +1463,7 @@ bytes@3.1.0:
   resolved "https://registry.yarnpkg.com/bytes/-/bytes-3.1.0.tgz#f6cf7933a360e0588fa9fde85651cdc7f805d1f6"
   integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
 
-"cable_ready@>= 4.0.3":
+"cable_ready@>= 4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/cable_ready/-/cable_ready-4.0.5.tgz#52d094de0d272f1dd8aff6bc22afeb29fa5e73d4"
   integrity sha512-8khNOYGHfXXNeXtDp00Odk2c21iWDu7cawYxYKuqBXn99TRlh+9jBvnJwXGfgabalesSjvEKKnAyeGLOjNmNtw==
@@ -3365,6 +3365,11 @@ infer-owner@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/infer-owner/-/infer-owner-1.0.4.tgz#c4cefcaa8e51051c2a40ba2ce8a3d27295af9467"
   integrity sha512-IClj+Xz94+d7irH5qRyfJonOdfTzuDaifE6ZPWfx0N0+/ATZCbuTPq2prFl526urkQd90WyUKIh1DfBQ2hMz9A==
+
+inflected@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/inflected/-/inflected-2.0.4.tgz#323770961ccbe992a98ea930512e9a82d3d3ef77"
+  integrity sha512-HQPzFLTTUvwfeUH6RAGjD8cHS069mBqXG5n4qaxX7sJXBhVQrsGgF+0ZJGkSuN6a8pcUWB/GXStta11kKi/WvA==
 
 inflight@^1.0.4:
   version "1.0.6"
@@ -6442,13 +6447,14 @@ stdout-stream@^1.4.0:
     "@stimulus/core" "^1.1.1"
     "@stimulus/webpack-helpers" "^1.1.1"
 
-stimulus_reflex@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-2.0.0.tgz#74737011943e64af11f0f9ad53a7ec3ce713cb50"
-  integrity sha512-nD8Fqom/k5dNzKOl51oujyZp+KyzCxn17C97hBbvkdAbO2rVIKrpm21kDfJdD8F8NmBLkePDd/HQdBR51KQqaA==
+stimulus_reflex@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-2.0.1.tgz#ff169ec2eef8fc3360801b97f0efa7f73356de1a"
+  integrity sha512-4EYNcfhVbfDP+VwyejHjOXDGuoeVDQUcYzh4nNkXuRhnu5v8/3v5KOPHSaZCLhk86fSa71v1THwsQdC5lT12lg==
   dependencies:
     actioncable ">= 5.2"
-    cable_ready ">= 4.0.3"
+    cable_ready ">= 4.0.5"
+    inflected "^2.0.4"
     stimulus ">= 1.1.1"
 
 stream-browserify@^2.0.1:
