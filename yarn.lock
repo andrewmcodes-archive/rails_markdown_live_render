@@ -1464,11 +1464,11 @@ bytes@3.1.0:
   integrity sha512-zauLjrfCG+xvoyaqLoV8bLVXXNGC4JqlxFCutSDWA6fJrTo2ZuvLYTqZ7aHBLZSMOopbzwv8f+wZcVzfVTI2Dg==
 
 "cable_ready@>= 4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/cable_ready/-/cable_ready-4.0.5.tgz#52d094de0d272f1dd8aff6bc22afeb29fa5e73d4"
-  integrity sha512-8khNOYGHfXXNeXtDp00Odk2c21iWDu7cawYxYKuqBXn99TRlh+9jBvnJwXGfgabalesSjvEKKnAyeGLOjNmNtw==
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/cable_ready/-/cable_ready-4.0.6.tgz#882fb291f0df70aeef2a1a8bae6e87d20bcbc2bd"
+  integrity sha512-gf+yFVnfHr9EjCioPN18osMe5mJ+t26feFkHSBBkSTfQXMJap7RaiSZqYJcY+Hk4xlSnbKcJgWoPBYjdUuPBAQ==
   dependencies:
-    morphdom "^2.5.6"
+    morphdom "^2.5.9"
 
 cacache@^11.2.0:
   version "11.3.3"
@@ -4232,10 +4232,10 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdir
   dependencies:
     minimist "0.0.8"
 
-morphdom@^2.5.6:
-  version "2.5.8"
-  resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.5.8.tgz#eab2d0156b5a6099278f172dea037ef2b3849358"
-  integrity sha512-w2DG6zJaI83oAv3Acimoj45AWTkKh57swi70NsxixHnalxrbNcy81TGk24YZRVSU82BeX8BH9wf8Df7A5DVu9Q==
+morphdom@^2.5.9:
+  version "2.5.9"
+  resolved "https://registry.yarnpkg.com/morphdom/-/morphdom-2.5.9.tgz#f4a0916af9e73dd7aa0fca9119b924c4c08990c6"
+  integrity sha512-dRsv6iD9XP9Ysz9qaJFhOO5cS8rwgOJXqSdIQOvh6/yWl69S7mKndouzDsQn7bSCs1fkNe/dtfy0nMUjGVcjnw==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -6448,9 +6448,9 @@ stdout-stream@^1.4.0:
     "@stimulus/webpack-helpers" "^1.1.1"
 
 stimulus_reflex@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-2.0.1.tgz#ff169ec2eef8fc3360801b97f0efa7f73356de1a"
-  integrity sha512-4EYNcfhVbfDP+VwyejHjOXDGuoeVDQUcYzh4nNkXuRhnu5v8/3v5KOPHSaZCLhk86fSa71v1THwsQdC5lT12lg==
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/stimulus_reflex/-/stimulus_reflex-2.0.2.tgz#9578e506c3179bd6ab35db5832808ce9f06d1cfb"
+  integrity sha512-8yI5SWxm/tZiRtYFjrP1uQf/CCFYA96BChohIrE4/WW767Q3aK5GhINvzHW5ygTygpokSxNIH1xttprYZ/Q/YQ==
   dependencies:
     actioncable ">= 5.2"
     cable_ready ">= 4.0.5"
